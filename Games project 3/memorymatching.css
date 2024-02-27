@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-image: url(background2.jpg);
+    background-size: 100%;
+}
+
+h1 {
+    color:brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#result {
+    font-size:x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 20px;
+    color:red;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.homebutton{
+    text-align: end;
+    padding: 20px;
+    margin: 0 20px 0 0;
+}
+.homebutton button{
+    padding: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+.homebutton a{
+    align-items: end;
+    font-size: x-large;
+    color: blue;
+    text-decoration: none;
+}
+@media screen and (max-width:320px) {
+    .container{
+        width: 100%;
+        height: 90%;
+    }
+    .board{
+        display: grid;
+        grid-template-columns: repeat(4, 60px);
+        gap: 30px;
+        margin-top: 30px;
+    }
+}

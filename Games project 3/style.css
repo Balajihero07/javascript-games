@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+body{
+    background-image: url(background1.jpg);
+    background-size: 100%;
+
+}
+.title{
+    color:black;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    animation: slideIn 2s ease-out;
+}
+.title img{
+    width: 120px;
+    height: 120px;
+}
+.heading{
+    margin: 35px 0 0 0;
+}
+.main{
+    margin: 20px;
+    color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.game1 img{
+    width: 170px;
+    height: 150px;
+    border-radius: 20px;
+    margin:5px 0 0 5px;
+}
+.playbutton button {
+    width: 70px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px 0 0 15px;
+}
+.playbutton a{
+    color: white;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.playbutton i{
+    color:white;
+    background-color: green;
+    width: 40px;
+    height: 25px;
+    font-size: x-large;
+    border-radius: 10px;
+    margin: 0 0 0 10px;
+    padding: 5px;
+    text-align: center;
+}
+.playbutton i:hover{
+    background-color: black;
+    color: white;
+}
+.playbutton button:hover{
+    background-color: green;
+    color: white;
+}
+.game1{
+    background: linear-gradient(10deg,skyblue,white);
+    padding: 40px;
+    border-radius: 10px;
+  
+}
+.playbutton{
+    margin: 0 0 0 10px;
+}
+.gamename{
+    margin: 5px 0 0 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f09324;
+}
+.search{
+    display: flex;
+}
+.search input{
+    width: 200px;
+    height: 40px;
+    border: solid 1px balck;
+    border-radius: 10px;
+    margin:40px 0 0 50px;
+}
+.search i{
+    width: 36px;
+    height: 26px;
+    padding: 10px;
+    background-color: skyblue;
+    color-scheme: black;
+    border-radius: 10px;
+    font-size: xx-large;
+    margin:10px 0 0 0;
+}
+.searchlogo{
+    margin: 28px 0 0 5px;
+}
+@media screen and (max-width:320px){
+    .container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .title{
+        flex-direction: column;
+        align-items: center;
+    }
+}
