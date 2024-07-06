@@ -1,1 +1,1 @@
-https://pluseplyastudios.netlify.app/
+https://pluseplaystudios.netlify.app/
